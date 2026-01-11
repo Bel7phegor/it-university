@@ -1,0 +1,49 @@
+shodan extension 
+
+wordpress user v2
+/wp-login.php 
+------------------------------------------------------------------------
+
+Kiến trúc và DH của web 
+
+
+
+
+
+
+
+
+LAB2 https://overthewire.org/wargames/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

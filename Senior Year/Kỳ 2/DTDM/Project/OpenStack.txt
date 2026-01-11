@@ -1,0 +1,19 @@
+Sử dụng tài nguyên vật lý để tạo ra các máy chủ ảo khác nhau và từ đó ta có thể xây dựng một hệ thống cloud như ý muốn, cung cấp đầy đủ các thành phần lõi của 1 dịch vụ cloud computing nói chung các thành phần này bao gồm compute, networking, storage, Identity và Image 
+- Ngoài ra có nhiều chức năng nâng cao 
+- Ảo hóa là gì? 
+	- Trong ảo hóa, tài nguyên vật lý như CPU, RAM và bộ nhớ lưu trữ sẽ được chia nhỏ và định nghĩa lại thành các chương trình riêng cho nhà cung cấp sau đó những tài nguyên nhỏ này sẽ được sử dụng để tạo ra máy tính ảo 
+	- DVDTDM Openstack nó Sử dụng công nghệ ảo hóa KVM để chia sẽ và dùng chung các nguồn tài nguyên vật lý cho các máy tính ảo
+- Các thành phần chính Của open stack 
+	- Nova, Cinder, Neutron, keystone và Glance
+	- Mỗi thành phần sẽ đảm nhiệm 1 vai trò khác nhau và kết hợp với nhau để tạo thành 1 hệ thống đám mây hoàn chỉnh
+- Nova: chịu trách nhiệm quản lý tài nguyên ảo, sử lý đến tiến trình trong máy ảo như RAM và CPU, cho phép người dùng thực hiện các thao tác liên quan đến việc quản lý máy tính ảo như tạo, sửa, xóa máy tính ảo 
+- Cinder: chịu trách nhiệm trong việc quản lý lưu trữ dữ liệu của máy tính ảo, ta có thể tạo, sửa xóa các volume lưu trữ dữ liệu nó sử dụng công nghệ lưu trữ khối chính vì vậy mà nó hỗ trợ nhiều công nghệ LVM, Ceph, NFS và iCSI
+- Neutron: Chị trách nhiệm quản lý hệ thống network của máy tính ảo bao gồm các tính năng như IP, router, dhcp và loadbalancer 
+- KeyStone: -------------- cung cấp 1 danh mục các user được ánh sạ tới các dịch vụ của openstack để người dùng có thể truy cập, hd như 1 hệ thống xác thực và ủy quyền chung cho toàn bộ hệ thống, và hỗ trợ nhiều hình thức xác thực bao gồm, thông tin đăng nhập, tên user, mk tiêu chuẩn của hệ thông token
+- Clance: cho phép người dùng tải lên, lưu trữ và quản lý các image , có thể bao gồm cả hệ điều hành hoặc các ứng dụng sẵn để chuẩn bị trên môi trường cloud
+
+- Xây dự cả hệ thống private cloud và public cloud mà không cần lo lắng về chi phí licent
+- PVCL: dữ liệu của doanh nghiệp nằm hoàn toàn trong sự kiểm soát của doanh nghiệp đó mà k hề có sự truy cập của bên thứ 3 do đó PVCL thích hợp triển khai cho các doanh nghiệp có nhiều thông tin bảo mật như tài chính ngân hàng ,sở bộ ban ngành -> cần có những trung tâm dữ liệu
+- PLCL: Phù hợp cho doanh nghiệp cung cấp các dịch vụ máy chủ ảo 
+
+- 

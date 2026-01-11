@@ -1,0 +1,61 @@
+Lập lịch Cromtab 
+ /etc/cromteb => cho pép lập lịch để chạy chương trình 
+
+Sử dụng netcat để chat qua lại trên port 12345 
+PC1 nc -l -p 12345
+PC2 nc 192.168.1.143 12345
+
+
+
+-----------------------------------------------------------
+
+DNS
+Bản ghi
+A: Chưa địa chỉ IP của miền 
+AAAA: Chứa địa IPv6 cho một miền
+CNAME: Chuyển tiếp sang miền phụ 
+MX: Chuyển hướng thư đến máy chủ email
+NS: Bản ghi gốc của tên miền 
+SRV: Chỉ định cổng cho các dịch vụ cụ thể.
+PTR: Chứa tên miền trong tra cứu ngược.
+TXT: 
+SOA: 
+
+---------------------------------------------------------------
+nmap -sC: Scrip mdinh của nmap 
+	-sV: Version 
+	-O: OS 
+	-Pn: sd khi o ping (SYN) 
+
+--------------------------------------------------------------
+Metasploit 
+OWASP ZAP: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

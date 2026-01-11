@@ -1,0 +1,5 @@
+🚀 Server is running on http://localhost:3000
+(node:148324) [DEP0170] DeprecationWarning: The URL mongodb://phucan2370:bPGZKpdWkPiSLUKW@ac-3uhjxlx-shard-00-00.is0wdhq.mongodb.net:27017,ac-3uhjxlx-shard-00-01.is0wdhq.mongodb.net:27017,ac-3uhjxlx-shard-00-02.is0wdhq.mongodb.net:27017/foodDB?authSource=admin&replicaSet=atlas-mqcrm6-shard-0&retryWrites=true&w=majority is invalid. Future versions of Node.js will throw an error.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Mongoose connected to DB
+✅ Connected to MongoDB Atlas

@@ -1,0 +1,11 @@
+# Bỏ qua file hệ thống/IDE
+.metadata/
+.plugins/
+.settings/
+.classpath
+.project
+*.class
+node_modules/
+*.log
+package-lock.json
+01-Van Eeckhoutte, Peter_ Weidman, Georgia - Penetration testing _ a hands-on introduction to hacking-No Starch Press (2014).pdf
