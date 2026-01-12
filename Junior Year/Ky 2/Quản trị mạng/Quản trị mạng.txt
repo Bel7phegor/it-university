@@ -1,0 +1,36 @@
+.LOG
+Window server 
+- ADDS 
+- ADS
+    
+
+
+
+
+
+
+IIS (Internet Information Services)
+- 
+DNS 
+- 
+
+Dựng 1 web server 
+Dựng 1 DNS 192.168.1.15 DNS phân giải trang www.ns21.vn = ip 192.168.1.10 
+
+FTP: truyền file 
+
+Truyền trong nội bộ 
+Sharing: không bảo mật 
+DFS 
+Cho phép gom group share thành 1 tên duy nhất 
+
+-Thuê kênh trắng 
+
+- 
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+pwd (print working directory): in ra thư mục làm việc hiện tại
+cd (change directory): Thay đổi thư mục làm việc
+
+Thư mục "/": được gọi là thư mục gốc
+ 
+Thư mục /tmp: thư mục chứa biến tạm
+
+Hai chấm (..) đại diện cho thư mục mẹ, một chấm (.) đại diện cho thư mục làm việc hiện tại 
+ex: mv dir1/* .
+
+Đổi tên tệp/ di chuyển tệp (move): mv 
+Sao chép tệp (copy): cp
+Xóa một tệp (remove): rm 
+Xóa một thư mục trống (remove directory): rmdir 
+- rmdir -p: xóa các thư mục mẹ, chỉ có thể xóa các thư mục trống
+
+Dấu "?": biểu thị bất kỳ ký tự đơn nào với tên giống nhau 
+Dấu "*": biểu thị không hoặc nhiều ký tự 
+EX: 
+cat test_1.txt test_2.txt test_3.txt = cat test_?.txt = cat test_*
+

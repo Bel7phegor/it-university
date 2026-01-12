@@ -1,0 +1,84 @@
+Chương 1: Tổng quan 
+Mô hình truyền dẫn cơ bản 
+
+Thành phần chủ yếu: 
+Nguồn
+Môi trường 
+Đích 
+
+Tín hiệu: có 2 dạng digital (dạng số) và analog (dạng tương tự) 
+
+	Các loại mạng không dây 		Công nghệ sử dụng
+WPAN                    		- Blutooth 802.15
+WLAN					- Wifi     802.11 a/b/g/n
+WMAN 					- Wi-max  802.16
+WWAN (Mạng không dây diện rộng) 	- 1G ->6G, GPRS, CDMA
+
+
+*BT về nhà: so sánh 4 loại topology
+Ưu nhược điểm 
+
+Chế độ truyền đẫn: có 3 dạng 
+Đơn công (simplex) Chỉ 1 thiết bị nhận 
+Bán song công (Hafl- duplex) Một thiết bị truyền 1 thiết bị nhận 
+Song công (Full - duplex) 2 thiết bị vừa chuyền vừa nhận đồng thời 
+
+- Cấu hình đường dây 
+ Điểm - điểm : Star, Ring 
+ Đa điểm : Bus 
+
+Chương 2: Mô hình OSI
+
+-Chức năng và nhiệm vụ
+  Lớp Vật lý: 
+- Chức năng 
++ Truyền các bit đi qua môi trường không dây/ có dây 
++ Ghép kênh, phân kênh 
+ Lớp liên kết dữ liệu: 
+- Chức năng
++ Xác định địa chỉ MAC
++ Phát hiện lỗi và sửa lỗi 
+ - Pantycheck 1c 
+ - Check SUM
+- Nhiệm vụ 
++ Phân bố kênh truyền - Tĩnh/Động 
+Lớp network 
+ - ĐỊnh tuyền 
+Tầng transport 
+- Truyền các segment theo đúng thứ tự
+- FlowControl 
+Tầng sesion 
+- Bắt đầu 1 phiên làm việc, gửi nhận dữ liệu, hoàn thành sẽ kết thúc phiên làm việc
+Tầng trình diễn
+- Giúp mã hóa dữ liệu 
+Tầng ứng dụng
+- Cung cấp giao diện cho người dùng 
+PAM 
+B1 lấy mẫu và giữ 
+B2 Đưa ra các giá trị từng mức ở dạng thập phân 
+B3 chuyển đổi ra dạng thập phân 
+B4 chuyển đổi số
+Dương thì bit đầu = 0, âm = 1
+
+
+Tốc độ bit(Rbit): số bit truyền đi trong 1 giây (bps:)
+Tốc độ baud: số đơn vị tín hiệu truyền đi trong 1 giây 
+
+Rbit = Rbaud.n 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

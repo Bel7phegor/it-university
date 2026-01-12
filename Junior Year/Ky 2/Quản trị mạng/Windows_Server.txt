@@ -1,0 +1,11 @@
+Active Directory (AD): 
+- khả năng quản trị tập trung người dùng cũng như tài nguyên trong một hệ thống mạng 
+- Được tổ chức theo mô hình phân cấp rừng(forest), cây(tree) và vùng 
+
+- Khả năng ủy quyền quản trị
+- Khả năng quản trị các policy
+Tính năng: 
+ - Lưu trữ dữ liệu tập trung.
+ - Khả năng linh hoạt với yêu cầu quản lý/
+ - Khả năng mở rộng. 
+ - Khả năng quản trị linh hoạt.

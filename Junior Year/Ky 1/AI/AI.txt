@@ -1,0 +1,3 @@
+Câu 1: Giải quyết vấn đề (chương 2), min max alpha beta 
+Câu 2: Chương 3,4 
+Câu 3: chương 5

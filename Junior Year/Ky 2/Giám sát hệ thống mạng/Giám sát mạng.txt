@@ -1,0 +1,68 @@
+.LOG
+
+CỔng uplink: nối làm đường trục           
+
+Triển khai gs hạ tầng mạng và dịch vụ mạng bằng phần
+Hệ thống cảnh báo bằng màu (ZAbbix) 
+
+Triển khai DNS- DHCP
+
+
+
+
+
+
+
+
+
+
+- DHCP sử dụng port 67 
+
+
+
+
+
+- Số lượng truy cập 
+- 
+
+
+
+
+----------------------------------------------------
+Giao thức SNMP 
+-Có 2 thành phần Manager và Agent.
+-MIB 
+-Khai báo 
+
+Bật SMNP trên Router - Chỉ rõ IP của Management 
+Cài Agent client rồi bật SMNP service 
+
+
+SW SG300 
+
+Object ID: 
+Object access: 
+
+3/6: Tuần 6 
+
+Tuần 8: làm bài giữa kì 
+
+Tuần 13: thực hành KT1: kiểm tra thực nghiệm 
+
+
+---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

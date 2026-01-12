@@ -1,0 +1,70 @@
+
+
+- IPv6 (128 Bit)
+Quy tắc 1: Cho phép bỏ các số 0 nằm trước mỗi nhóm hexa (octet)
+Quy tắc 2: Một số nhóm liền nhau chứa toàn số 0 có thể viết thay thế bằng dấu “::”
+Ex: 2001:C95C::5E::251
+
+- Bit tiền tố: sẽ quyết định địa chỉ thuộc loại nào và số lượng địa chỉ đó trong không gian chung Ipv6
+- Bit định danh giao diện (Interfae ID): có 64 bit cuối cùng được sử dụng để xác định một giao diện duy nhất trong mạng.
+
+- Định dạng theo cơ chế EUI-64 mở rộng 48 bit địa chỉ MAC của interface thành 64 bit định danh giao diện
+B1: Lấy địa chỉ MAC của Interface : 00 21 2F B5 6E 10
+B2: Chèn 16 bit hexa FF-FE vào giữa địa chỉ MAC:  00 21 2F FF-FE B5 6E 10
+B3: Đổi 2 số hexa đầu tiên đến số nhị phân và tiến hành đảo bit thứ 7 (Nếu là 0 -> 1, Nếu là 1 -> 0)
+00000000-> 00000010
+B4: Nhóm 4 số hexa thành 1 octet để biểu diễn bit định danh (interface ID)
+0221 2FFF FEB5 6E10
+Unicast - Multicast - Anycast 
+Gói tin được gửi đến giao diện duy nhất gắn địa chỉ.
+Gói tin được gửi đến tất cả các giao diện trong nhóm
+Gói tin được gửi đến giao diện gần nhất trong nhóm (theo thủ tục định tuyến)
+* Địa chỉ Special 
+- Địa chỉ Loopback: 
+	+ Có dạng 0:0:0:0:0:0:0:1 hoặc ::1/128
+	+ Được sử dụng làm địa chỉ xác định giao diện loopback
+	+ Không bao giờ được gửi trên đường kết nối hoặc chuyển tiếp đi bởi bộ           định tuyến
+- Địa chỉ Unspecified:
+	+ Có dạng 0:0:0:0:0:0:0:0 hoặc ::/128
+	+ Được sử dụng để thể hiện rằng hiện tại nó không có địa chỉ
+	+ Không bao giờ được gán cho một giao diện hoặc sử dụng như địa chỉ đích
+- Link-Local 
+Có dạng FE80::/10
+Phục vụ giao tiếp nội bộ (thủ tục Neighbor Discovery)
+Chỉ sử dụng trong phạm vi đường kết nối.
+Luôn luôn tự động cấu hình khi thiết bị IPv6 khởi động
+Mọi giao diện đều phải có địa chỉ link-local
+- Global 
+Tiền tố 001::/3 xác định dạng địa chỉ định danh toàn cầu 
+Phần định tuyến toàn cầu: các tổ chứcVùng đinh tuyến trong mạng (site): là không gian địa chỉ mà tổ chức có thể tự mình quản lý, phân bổ, cấp phát và tổ chức định tuyến trong mạng của mình quản lý quốc tế sẽ phân cấp quản lý vùng địa chỉ này, chuyển giao lại cho tổ chức khác.
+Vùng định danh giao diện có thể sử dụng định danh địa chỉ EUI-64, DHCPv6 hoặc tự sinh theo kỹ thuật được trình bày trong mục Định danh giao diện (Interface ID)
+- Unique-Local
+Tiền tố FC00::/8
+Global ID: Địa chỉ site. Có thể gán thêm tuỳ ý.
+Subnet ID: Địa chỉ subnet trong site
+64 bit cuối cùng là bit định danh giao diện
+
+TCP/IP 
+IoT, Cloud BlogChanin Ai IPv6+ 
+IETF 
+
+kiến trúc chưa thành 3 tier và 2 kiểu kết nối
+Transit: KN trung gian Tier 3,2
+Peering: Ngang hàng, không trả phí, Tier 1,2   
+
+IXP: giúp kết nối peering trong nc 
+
+Tuyến cáp quan biển:TVH, SMW-3 (Đà nẵng ) AAG, AAE-1(40Tbps)
+VNNIC quản lý tài nguyên 
+
+AS hệ thống mạng đc quản lý bởi chủ thể 
+ASN định danh hệ thống mạng mỗi AS được gán một giá trị ASN 
+
+Có 13 máy chủ root trên tg có 3 máy chủ trên VN 
+
+3 tìa nguyên IP, ASN, Domain name.
+
+Vai trò: quản lý tài nguyên 
+         vận hành quản lý ĐNS quốc gia 
+Các hoạt động: Thúc đẩy IPv6 
+		 

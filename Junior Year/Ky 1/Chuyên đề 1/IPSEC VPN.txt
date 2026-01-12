@@ -1,0 +1,24 @@
+IPSEC là 1 framework chạy ở layer 3 và có tác dụng là bọc các gói tin IP trong 1 đường hầm, và trong đường hầm đó các gói tin IP được mã hóa và được gắn 1 phần hash để đảm bảo tín toàn vẹn 
+Xây dựng đường hầm VPN sau đó dùng IPSEC để bọc đường hầm và mã hóa dữ liệu bên trong 
+Gồm nhiều giao thức chứa bên trong 
+- Xác thực thiết bị đầu xa 
+- Mã hóa 
+- Đảm bảo tính toàn vẹn 
+
+Xây theo 2 giai đoạn 
+- Đường hầm Phase 1: Xây lên mục tiêu là có một đường hầm an toàn sau đó trao đổi rồi xây dựng đường hầm phase 2 bộ
+Bộ Proposal
+ show run | sec crypto isakmp policy
+ show run | i crypto isakmp key 
+ - Phương pháp xác thực: authentication pre-share  
+ - Hash: Đảm bảo tính toàn vẹn của dữ liệu 
+ - Mã hóa: AES 
+ - DH Group: 5
+-  Phase 2: dùng để trao đổi dữ liệu: có 2 đường hầm con 
+show run | sec crypto ipsec 
+show ip access-list
+show run | sec crypto map 
+
+ESP hay AH là thuật toán mà IPSEC dùng để bảo vệ cái gói tin và chỉ được dùng 1 trong 2 
+- Với AH đảm bảo tính toàn vẹn  
+
